@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5ecd7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #4d7a52;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        h2 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Pendaftaran</h2>
+        <input type="text" id="name" placeholder="Nama">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="address" placeholder="Alamat Lengkap">
+        <button onclick="validateForm()">Daftar</button>
+    </div>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
+            
+            if (name === "" || email === "" || address === "") {
+                alert("Semua data harus diisi.");
+            } else {
+                alert("Pendaftaran berhasil!");
+            }
+        }
+    </script>
+</body>
+</html>
