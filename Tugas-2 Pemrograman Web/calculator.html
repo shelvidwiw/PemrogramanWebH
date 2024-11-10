@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ta’umbahno Laundry Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="navbar">
+        <img
+          src="./asset/Logo.jpg"
+          alt="Ta’umbahno Laundry Logo"
+          class="logo"
+        />
+        <h1>Ta’umbahno Laundry</h1>
+        <div class="navbar-nav">
+          <a href="index.html">Home</a>
+          <!-- Tambahkan tombol Home -->
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+      <div class="calculator">
+        <h2>Calculator Laundry</h2>
+        <form id="laundryForm">
+          <label for="method">Metode</label>
+          <select id="method" required>
+            <option value="standard">Standard</option>
+            <option value="express">Express</option>
+          </select>
+
+          <label for="item">Jenis Item</label>
+          <select id="item" required>
+            <option value="pakaian">Pakaian</option>
+            <option value="selimut">Selimut</option>
+          </select>
+
+          <label for="weight">Berat/Jumlah item</label>
+          <input
+            type="number"
+            id="weight"
+            placeholder="Kg atau Item"
+            min="1"
+            required
+          />
+
+          <label for="price">Harga</label>
+          <input type="text" id="price" readonly />
+
+          <button type="button" class="btn-cal" onclick="calculatePrice()">
+            Hitung Harga
+          </button>
+        </form>
+      </div>
+
+      <div class="pricing-price">
+        <div class="standar">
+          <h3>Standard</h3>
+          <p>Estimasi 3 hari</p>
+          <p>Pakaian = Rp 3.000/Kg</p>
+          <p>Selimut = Rp 10.000/item</p>
+        </div>
+        <div class="express">
+          <h3>Express</h3>
+          <p>Estimasi 1 hari</p>
+          <p>Pakaian = Rp 7.000/Kg</p>
+          <p>Selimut = Rp 12.000/item</p>
+          <p>Minimal 3 Kilo</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
