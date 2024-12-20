@@ -1,0 +1,336 @@
+body {
+  margin: 0 0;
+  background-color: #f3d6d6;
+  /* background-image: url(./asset/Mesincuci.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   */
+}
+/* Header styling */
+
+.logo {
+  width: 75px;
+  margin-right: 20px;
+  height: 75px;
+}
+
+.navbar {
+  color: rgb(0, 0, 0);
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  font-style: italic;
+  padding: 20px 25px;
+  align-items: center;
+  display: flex;
+  background-color: pink;
+}
+.navbar h1 {
+  margin-right: auto;
+}
+.navbar .navbar-nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: large;
+}
+
+.navbar .navbar-nav a:hover {
+  color: red;
+}
+
+.navbar .icon {
+  color: red;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.hero-content {
+  max-width: 50%;
+  color: white;
+}
+
+.hero-content h2 {
+  font-size: 65px;
+  margin-bottom: 10px;
+  margin-top: 1px;
+}
+
+.hero-content p {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.laundry-room {
+  border-radius: 10%;
+}
+
+.btn {
+  background-color: #ffd700;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 15%;
+}
+.btn:hover {
+  color: red;
+}
+
+.hero-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+}
+.hero-service img {
+  width: 500px;
+  height: auto;
+}
+/* Services Section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.service-item {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 36px;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ffd700;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Pricing Section */
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+ 
+}
+
+.pricing-content{
+  font-size: 25px;
+  color: white;
+}
+
+.pricing-price{
+  font-size: 20px;
+  color: white;
+  margin-right: 300px;
+  background: pink;
+  padding: 10px 50px;
+  border-radius: 25px;
+}
+
+.pricing-price h3{
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+/* Location Section */
+.location {
+  padding: 40px;
+}
+
+
+.map iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+  color: white;
+  font-size: 28px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.about-section,
+.advantages-section {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  flex-direction: row;
+}
+
+.testimonials-section {
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.testimonials-section h2 {
+  font-size: 28px;
+  color: #ffe74c;
+  margin-bottom: 10px;
+}
+
+.testimonials-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Membuat kolom responsif */
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.testimonial p {
+  color: #ffd700; /* Warna bintang */
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  color: #362f2f;
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.author img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.author span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #362f2f;
+}
+
+/* Calculator Section */
+.calculator-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.calculator h2 {
+  color: #e94e77;
+  font-size: 24px;
+}
+
+.calculator label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.calculator select,
+.calculator input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-cal {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-cal:hover {
+  background-color: #ff8c00;
+}
+
+/* Footer styling */
+.footer {
+  color: white;
+  background-color: pink;
+  text-align: center;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+}
